@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "ba063bca-c48c-4c90-bcb3-5fe180a8efef",
+		"name": "postmane1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21166103"
+	},
+	"item": [
+		{
+			"name": "Userdoregister1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Dima4343@mail.ru\",\r\n    \"name\": \" Dima154\",\r\n    \"password\": \"1254\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Userdoregister2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Dima4343@mail.ru\",\r\n    \"name\": \" Dima154\",\r\n    \"password\": \"1254\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Userdoregister3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"Dima4343@mail.ru\",\r\n    \"name\": \" Dima154\",\r\n    \"password\": \"1254\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}doregister",
+					"host": [
+						"{{url}}doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createcompany1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"company_name\": \"{{company_name}}\",\r\n    \"company_type\": \"ИП\",\r\n    \"company_users\": [\"{{email1}}\",\"{{email2}}\"],\r\n    \"email_owner\": \"{{email3}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}createcompany",
+					"host": [
+						"{{url}}createcompany"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "magicsearch1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"query\": \"{{company_name}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}magicsearch",
+					"host": [
+						"{{url}}magicsearch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
